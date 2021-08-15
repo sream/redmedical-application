@@ -1,7 +1,6 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
-import { _throw } from 'rxjs/observable/throw';
+import { Observable, throwError } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 
 export interface ISearchResultItem  {
@@ -32,7 +31,7 @@ export class SearchService {
                 console.log('API USAGE: ' + response.quota_remaining + ' of ' + response.quota_max + ' requests available');
                 return response;
             }),
-            catchError((error: HttpErrorResponse) => _throw(error))
+            catchError((error: HttpErrorResponse) => throwError(error))
         );
     }
 
