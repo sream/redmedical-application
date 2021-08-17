@@ -1,3 +1,25 @@
-<p>
-  Dashboard Komponente...
-</p>
+<app-dashboard-card>
+  <div card-header>
+    <h2>Fragen zu 'Typescript'</h2>
+  </div>
+  <div card-body>
+    <app-dashboard-questions [items]="typeScriptQuestions"></app-dashboard-questions>
+  </div>
+</app-dashboard-card>
+<app-dashboard-card>
+  <div card-header>
+    <h2>Fragen zu 'Angular2'</h2>
+  </div>
+  <div card-body>
+    <app-dashboard-questions [items]="angular2Questions"></app-dashboard-questions>
+  </div>
+</app-dashboard-card>
+<app-dashboard-card>
+  <div card-header>
+    <h2>Fragen zu 'Weather' plus Wetterdaten</h2>
+  </div>
+  <div card-body>
+    <app-dashboard-questions [items]="weatherQuestions"></app-dashboard-questions>
+    <app-dashboard-weather [items]="weatherSearchitems"></app-dashboard-weather>
+  </div>
+</app-dashboard-card>

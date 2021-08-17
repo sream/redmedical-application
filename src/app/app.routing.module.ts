@@ -4,7 +4,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { SearchComponent } from './search/search.component';
 
 const appRoutes: Routes = [
-  { path: 'dashboard', component: DashboardComponent},
+  { 
+    path: 'dashboard',
+    loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule)
+  },
   { path: 'search', component: SearchComponent },
   { path: '**', component: DashboardComponent}
 ];

@@ -1,0 +1,22 @@
+.card {
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+
+    .card-header {
+        border-bottom: 1px solid rgba(0,0,0,.125);
+        padding: 0 15px;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .card-body > div {
+        display: flex;
+        flex-flow: column;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}

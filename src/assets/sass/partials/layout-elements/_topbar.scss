@@ -6,6 +6,7 @@
     width: calc(100% - #{$sidebar-width});
     top: 0;
     z-index: 100;
+    margin-left: 252px;
 
     &::after {
         clear: both;

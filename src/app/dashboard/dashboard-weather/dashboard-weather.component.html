@@ -1,0 +1,14 @@
+<div [class]="'list-group-item order-' + item.order" *ngFor="let item of items">
+    <div class="weather-info-box">
+        <fa-icon [icon]="faThermometerFull"></fa-icon>
+        <span>{{ item.temperatureA }}</span>
+    </div>
+    <div class="weather-info-box">
+        <fa-icon [icon]="faThermometerHalf"></fa-icon>
+        <span>{{ item.temperature3 }}</span>
+    </div>
+    <div class="weather-info-box">
+        <fa-icon [icon]="faClock"></fa-icon>
+        <span>{{ item.date }} um {{ item.time }}</span>
+    </div>
+</div>

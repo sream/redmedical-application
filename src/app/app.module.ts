@@ -6,14 +6,14 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routing.module';
 import { LayoutModule } from './core/layout/layout.module';
 import { SearchService } from './core/services/search.service';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { WeatherService } from './core/services/weather.service';
 import { SearchComponent } from './search/search.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent,
-    SearchComponent
+    SearchComponent,
   ],
   imports: [
     BrowserModule,
@@ -21,9 +21,10 @@ import { SearchComponent } from './search/search.component';
     HttpClientModule,
 
     LayoutModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
-  providers: [SearchService],
+  providers: [SearchService, WeatherService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

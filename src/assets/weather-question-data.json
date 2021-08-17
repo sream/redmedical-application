@@ -1,0 +1,140 @@
+{
+    "items": [
+        {
+            "tags": [
+                "list",
+                "duplicates",
+                "prolog",
+                "set"
+            ],
+            "owner": {
+                "reputation": 1,
+                "user_id": 16165103,
+                "user_type": "registered",
+                "profile_image": "https://www.gravatar.com/avatar/7662bfb206579dc06936cef139e4df9a?s=128&d=identicon&r=PG&f=1",
+                "display_name": "Jaswanth Alla ",
+                "link": "https://stackoverflow.com/users/16165103/jaswanth-alla"
+            },
+            "is_answered": false,
+            "view_count": 12,
+            "closed_date": 1629066527,
+            "answer_count": 0,
+            "score": -4,
+            "last_activity_date": 1629041433,
+            "creation_date": 1629041433,
+            "question_id": 68792956,
+            "link": "https://stackoverflow.com/questions/68792956/checking-weather-there-are-duplicates-in-prolog-list",
+            "closed_reason": "Needs details or clarity",
+            "title": "checking weather there are duplicates in prolog list"
+        },
+        {
+            "tags": [
+                "list",
+                "duplicates",
+                "prolog",
+                "set"
+            ],
+            "owner": {
+                "reputation": 1,
+                "user_id": 16165103,
+                "user_type": "registered",
+                "profile_image": "https://www.gravatar.com/avatar/7662bfb206579dc06936cef139e4df9a?s=128&d=identicon&r=PG&f=1",
+                "display_name": "Jaswanth Alla ",
+                "link": "https://stackoverflow.com/users/16165103/jaswanth-alla"
+            },
+            "is_answered": false,
+            "view_count": 12,
+            "closed_date": 1629072939,
+            "answer_count": 0,
+            "score": -4,
+            "last_activity_date": 1629041433,
+            "creation_date": 1629041433,
+            "question_id": 68792957,
+            "link": "https://stackoverflow.com/questions/68792957/checking-weather-there-are-duplicates-in-prolog-list",
+            "closed_reason": "Needs details or clarity",
+            "title": "checking weather there are duplicates in prolog list"
+        },
+        {
+            "tags": [
+                "java",
+                "sockets",
+                "server",
+                "client"
+            ],
+            "owner": {
+                "reputation": 1,
+                "user_id": 15598630,
+                "user_type": "registered",
+                "profile_image": "https://lh3.googleusercontent.com/-4Uf28M6eKoY/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucmNLiKThplQtbcw9HSOUwBdiJzAlQ/s96-c/photo.jpg?sz=128",
+                "display_name": "Emmanuel ",
+                "link": "https://stackoverflow.com/users/15598630/emmanuel"
+            },
+            "is_answered": false,
+            "view_count": 11,
+            "closed_date": 1629034860,
+            "answer_count": 0,
+            "score": -3,
+            "last_activity_date": 1629032947,
+            "creation_date": 1629032947,
+            "question_id": 68791831,
+            "link": "https://stackoverflow.com/questions/68791831/how-can-i-upload-weather-info-such-as-temperature-from-a-weather-station-clien",
+            "closed_reason": "Needs more focus",
+            "title": "How can i upload weather info such as temperature from a &#39;Weather Station&#39; client to a server"
+        },
+        {
+            "tags": [
+                "swift",
+                "objective-c",
+                "weather",
+                "mkoverlay"
+            ],
+            "owner": {
+                "reputation": 9,
+                "user_id": 6868267,
+                "user_type": "registered",
+                "profile_image": "https://i.stack.imgur.com/1gLUj.jpg?s=128&g=1",
+                "display_name": "Rahul D",
+                "link": "https://stackoverflow.com/users/6868267/rahul-d"
+            },
+            "is_answered": false,
+            "view_count": 27,
+            "closed_date": 1629015758,
+            "answer_count": 0,
+            "score": -1,
+            "last_activity_date": 1629047630,
+            "creation_date": 1629010870,
+            "last_edit_date": 1629047630,
+            "question_id": 68789390,
+            "link": "https://stackoverflow.com/questions/68789390/best-way-to-implement-a-weather-radar-overlay-for-web-maps-using-json-data",
+            "closed_reason": "Not suitable for this site",
+            "title": "Best way to implement a Weather Radar Overlay for Web Maps using JSON data"
+        },
+        {
+            "tags": [
+                "weather",
+                "weather-api"
+            ],
+            "owner": {
+                "reputation": 87,
+                "user_id": 11786379,
+                "user_type": "registered",
+                "profile_image": "https://lh6.googleusercontent.com/-S9THKR9DhEg/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcJlTaOBPn8ezuKjGltpNDiyLgBCA/photo.jpg?sz=128",
+                "display_name": "danrockcoll",
+                "link": "https://stackoverflow.com/users/11786379/danrockcoll"
+            },
+            "is_answered": false,
+            "view_count": 11,
+            "answer_count": 0,
+            "score": 0,
+            "last_activity_date": 1628766670,
+            "creation_date": 1628766670,
+            "question_id": 68756344,
+            "content_license": "CC BY-SA 4.0",
+            "link": "https://stackoverflow.com/questions/68756344/which-noaa-weather-api-to-use-for-global-winds-aloft-data",
+            "title": "Which NOAA Weather API To Use For Global Winds Aloft Data?"
+        }
+    ],
+    "has_more": true,
+    "quota_max": 300,
+    "quota_remaining": 294
+}

@@ -1,7 +1,8 @@
-import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
+import { PageInfo } from '../models/page-info.model';
 
 export interface ISearchResultItem  {
     answer_count: number;
@@ -20,19 +21,46 @@ export interface ISearchResultItem  {
 @Injectable()
 export class SearchService {
 
-    private static readonly apiUrl =
-        'https://api.stackexchange.com/2.2/search?pagesize=20&order=desc&sort=activity&site=stackoverflow&intitle=';
+    private static readonly apiUrl = 'https://api.stackexchange.com/2.2/search';
 
     constructor(private httpClient: HttpClient) {}
 
-    search(keyword: string): Observable<JSON> {
-        return this.httpClient.get(SearchService.apiUrl + keyword).pipe(
+    search(pageInfo: PageInfo): Observable<any> {
+        const params = this.prepareParams(pageInfo);
+
+        return this.httpClient.get(SearchService.apiUrl, { params }).pipe(
             map((response: any) => {
                 console.log('API USAGE: ' + response.quota_remaining + ' of ' + response.quota_max + ' requests available');
                 return response;
             }),
             catchError((error: HttpErrorResponse) => throwError(error))
         );
+    }
+
+    private prepareParams(pageInfo: PageInfo): HttpParams {
+        const obj = {};
+        
+        if (typeof pageInfo.pageSize !== 'undefined') {
+            obj['pageSize'] = pageInfo.pageSize
+        }
+
+        if (typeof pageInfo.order !== 'undefined') {
+            obj['order'] = pageInfo.order
+        }
+
+        if (typeof pageInfo.sort !== 'undefined') {
+            obj['sort'] = pageInfo.sort
+        }
+
+        if (typeof pageInfo.site !== 'undefined') {
+            obj['site'] = pageInfo.site
+        }
+
+        if (typeof pageInfo.intitle !== 'undefined') {
+            obj['intitle'] = pageInfo.intitle
+        }
+        
+        return new HttpParams({ fromObject: obj })
     }
 
 }
